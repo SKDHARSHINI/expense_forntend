@@ -11,7 +11,7 @@ const [expense,setExpense]=useState([])
 
 const fetchExpense = async()=>{
   try{
-    const response =await fetch('http://localhost:4000/Expense');
+    const response =await fetch('https://expense-backend-1-s6cv.onrender.com');
     const data=await response.json();
     setExpense(data);
   }
@@ -27,7 +27,7 @@ useEffect(()=>{
 
 const addExpense=async(title,amount)=>{
   try{
-    const response=await fetch('http://localhost:4000/Expense',{
+    const response=await fetch('https://expense-backend-1-s6cv.onrender.com/Expense',{
       method:'POST',
       headers:{'Content-Type':'application/json'},
       body:JSON.stringify({title,amount}),
