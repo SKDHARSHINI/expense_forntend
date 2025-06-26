@@ -4,7 +4,7 @@ import History from './History.jsx'
 import BalanceContainer from './BalanceContainer.jsx';
 /*import Modelform from './Modelform.jsx';*/
 
-import {v4 as uid} from "uuid";
+
 function ExpenseContainer(){
   
 const [expense,setExpense]=useState([])
